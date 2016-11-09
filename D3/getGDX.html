@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.pathline {
+	stroke: red;
+	stroke-width: 3;
+	fill: none;
+}
+.Highline {
+	stroke: blue;
+	stroke-width: 3;
+	fill: none;
+}
+.Lowline {
+	stroke: black;
+	stroke-width: 3;
+	fill: none;
+}
+
+.Closeline {
+	stroke: black;
+	stroke-width: 3;
+	fill: none;
+}
+</style>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+var width  = 1024;
+var height = 768; 
+d3.csv("./table.csv", function(data) {
+	console.log(data);
+	data.forEach(function(d) {
+		console.log(d.Open,d.High,d.Low,d.Close);
+	});
+	
+	var maxy = d3.max(data, function(d) { return d.Open; });
+	var ln = data.length;
+	var ctrl  = d3.select("body").append("svg").attr("width", width).attr("height", height);
+	var lines = d3.line().
+	x(function(d,i){ return i * (width/ln); }).
+	y(function(d){ return d.Open * (height/maxy); });
+	ctrl.append("path").data([data]).
+	attr("class", "pathline").
+	attr("d", lines);
+
+	var maxy = d3.max(data, function(d) { return d.High; });
+	x(function(d,i){ return i * (width/ln); }).
+	y(function(d){ return d.High * (height/maxy); });
+	ctrl.append("path").data([data]).
+	attr("class", "Highline").
+	attr("d", lines);
+
+	var maxy = d3.max(data, function(d) { return d.Low; });
+	x(function(d,i){ return i * (width/ln); }).
+	y(function(d){ return d.Low * (height/maxy); });
+	ctrl.append("path").data([data]).
+	attr("class", "Lowline").
+	attr("d", lines);	
+
+	var maxy = d3.max(data, function(d) { return d.Close; });
+	x(function(d,i){ return i * (width/ln); }).
+	y(function(d){ return d.Close * (height/maxy); });
+	ctrl.append("path").data([data]).
+	attr("class", "Closeline").
+	attr("d", lines);		
+});
+</script>
+</body>
+</html>
