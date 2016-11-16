@@ -3,7 +3,7 @@ function testD3()
 
 var width  = 1024;
 var height = 768;
-dataPath = 'https://github.com/ChoYC/D3-201611/';
+dataPath = 'https://github.com/ChoYC/NTUB_Project/D3/';
 	dataFile = 'table.csv';
 	dataUrl = dataPath + dataFile;
 d3.csv("dataUrl, function(data) {
