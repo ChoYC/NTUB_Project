@@ -53,4 +53,4 @@ d3.csv("dataUrl, function(data) {
 	attr("id", "pathlineClose").
 	attr("d", linesClose);
 });	
-}}
+}
