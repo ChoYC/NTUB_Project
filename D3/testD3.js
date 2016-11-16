@@ -1,20 +1,12 @@
 function testD3()
 {
-dataPath = './';
-dataFile = 'table.csv';
-dataUrl  = dataPath + dataFile;
-
-console.log(dataUrl);
-var dataset = [];
-var getCSV = d3.csv(dataUrl, 
-	function(data) 
-	{
-		dataset = data.map(function(data) { return data;} );
-	});
 
 var width  = 1024;
 var height = 768;
-d3.csv("./table.csv", function(data) {
+dataPath = 'https://github.com/ChoYC/D3-201611/';
+	dataFile = 'table.csv';
+	dataUrl = dataPath + dataFile;
+d3.csv("dataUrl, function(data) {
 	console.log(data);
 	data.forEach(function(d) {
 		console.log(d.Open);
@@ -24,7 +16,7 @@ d3.csv("./table.csv", function(data) {
 	});
 	var maxHigh = d3.max(data, function(d) { return d.High; });
 	var ln = data.length;
-	var ctrl  = d3.select("featured").append("svg").attr("width", width).attr("height", height);
+	var ctrl  = d3.select(".featured").append("svg").attr("width", width).attr("height", height);
 	
 	var linesOpen = d3.line().
 	x(function(d,i){ return i * (width/ln); }).  
@@ -61,4 +53,4 @@ d3.csv("./table.csv", function(data) {
 	attr("id", "pathlineClose").
 	attr("d", linesClose);
 });	
-}
+}}
