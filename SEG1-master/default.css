@@ -686,11 +686,13 @@ ul.contact li a.icon-rss:before
 {
 	float: left;
 	margin-right: 250px;
+	padding-right: 30px;
 }
 .column2
 {
 	float: left;
 	margin-left: 30%;
+	padding-right: 30px;
 }
 
 
