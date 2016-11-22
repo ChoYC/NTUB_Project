@@ -677,7 +677,7 @@ ul.contact li a.icon-rss:before
 	color: #FFF;
 }
 
-.column1,  .column2,  .column3, 
+.column1,  .column2,  .column3
 {
 	width: 282px;
 }
@@ -685,7 +685,7 @@ ul.contact li a.icon-rss:before
 .column1,  .column2
 {
 	float: left;
-	margin-right: 35px;
+	margin-right: 30px;
 }
 
 .column3
