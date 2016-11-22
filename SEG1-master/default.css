@@ -360,7 +360,7 @@ ul.contact li a.icon-rss:before
 #header
 {
 	position: relative;
-	height: 100px;
+	height: 195px;
 }
 
 /*********************************************************************************/
@@ -397,7 +397,7 @@ ul.contact li a.icon-rss:before
 #logo span
 {
 	position: absolute;
-	top: 1.4em;
+	top: 11em;
 	display: inline-block;
 	padding-left: 1.50em;
 	letter-spacing: 0.10em;
