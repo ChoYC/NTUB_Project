@@ -887,7 +887,7 @@ ul.contact li a.icon-rss:before
 {
 	overflow: hidden;
 	margin: 5em auto 2em auto;
-	padding: 2em 0em 2em 10em;
+	padding: 2em 0em 2em 0em;
 	background: #ECECEC;
 }
 
@@ -904,6 +904,7 @@ ul.contact li a.icon-rss:before
 {
 	display: block;
 	padding-top: 0.20em;
+	padding-bottom: 5em;
 	text-transform: uppercase;
 	font-size: 1.2em;
 	color: #A2A2A2;
