@@ -677,7 +677,7 @@ ul.contact li a.icon-rss:before
 	color: #FFF;
 }
 
-.column1,  .column2,  .column3
+.column1,  .column2,  .column3,  .column4
 {
 	width: 282px;
 }
@@ -685,25 +685,28 @@ ul.contact li a.icon-rss:before
 .column1,  .column2
 {
 	float: left;
-	margin-right: 30px;
+	margin-right: 24px;
 }
 
-
-
 .column3
+{
+	float: left;
+}
+
+.column4
 {
 	float: right;
 }
 
 
 
-	#header-featured
-	{
-		height: 30em;
-		background-image: url(images/banner.jpg);
-		background-position: center;
-		background-size: cover;
-	}
+#header-featured
+{
+	height: 30em;
+	background-image: url(images/banner.jpg);
+	background-position: center;
+	background-size: cover;
+}
 
 
 #slider-wrapper
