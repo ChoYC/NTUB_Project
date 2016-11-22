@@ -699,14 +699,13 @@ ul.contact li a.icon-rss:before
 }
 
 
-
-#header-featured
-{
-	height: 30em;
-	background-image: url(images/banner.jpg);
-	background-position: center;
-	background-size: cover;
-}
+	#header-featured
+	{
+		height: 30em;
+		background-image: url(images/banner.jpg);
+		background-position: center;
+		background-size: cover;
+	}
 
 
 #slider-wrapper
@@ -905,7 +904,6 @@ ul.contact li a.icon-rss:before
 {
 	display: block;
 	padding-top: 0.20em;
-	padding-bottom:5em;
 	text-transform: uppercase;
 	font-size: 1.2em;
 	color: #A2A2A2;
