@@ -682,7 +682,7 @@ ul.contact li a.icon-rss:before
 	width: 282px;
 }
 
-.column1,  .column2
+.column1
 {
 	float: left;
 	margin-right: 30px;
@@ -691,6 +691,7 @@ ul.contact li a.icon-rss:before
 .column2
 {
 	float: left;
+	margin-right: 35%;
 }
 
 .column3
