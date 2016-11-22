@@ -341,7 +341,7 @@ ul.contact li a.icon-rss:before
 	.title
 {
 	margin-bottom: 3em;
-	font-family:·L³n¥¿¶ÂÅé;
+	font-family:Â·LÂ³nÂ¥Â¿Â¶Ã‚Ã…Ã©;
 	font-weight:bolder;
 	text-decoration:none;
 }
@@ -697,13 +697,13 @@ ul.contact li a.icon-rss:before
 
 
 
-	#header-featured
-	{
-		height: 30em;
-		background-image: url(images/banner.jpg);
-		background-position: center;
-		background-size: cover;
-	}
+#header-featured
+{
+	height: 30em;
+	background-image: url(images/banner.jpg);
+	background-position: center;
+	background-size: cover;
+}
 
 
 #slider-wrapper
