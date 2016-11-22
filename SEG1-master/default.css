@@ -682,12 +682,16 @@ ul.contact li a.icon-rss:before
 	width: 282px;
 }
 
-.column1,  .column2
+.column1
 {
 	float: left;
 	margin-right: 250px;
 }
-
+.column2
+{
+	float: left;
+	margin-left: 500px;
+}
 
 
 .column3
