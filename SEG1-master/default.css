@@ -900,6 +900,7 @@ ul.contact li a.icon-rss:before
 {
 	display: block;
 	padding-top: 0.20em;
+	padding-bottom:20em;
 	text-transform: uppercase;
 	font-size: 1.2em;
 	color: #A2A2A2;
