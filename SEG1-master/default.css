@@ -677,7 +677,7 @@ ul.contact li a.icon-rss:before
 	color: #FFF;
 }
 
-.column1,  .column2,  .column3
+.column1,  .column2,  .column3,  .column4
 {
 	width: 282px;
 }
@@ -685,14 +685,17 @@ ul.contact li a.icon-rss:before
 .column1,  .column2
 {
 	float: left;
-	margin-right: 160px;
+	margin-right: 24px;
 }
 
 .column3
 {
+	float: left;
+}
+.column4
+{
 	float: right;
 }
-
 
 
 	#header-featured
